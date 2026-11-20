@@ -1,5 +1,4 @@
 {
-  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "relay-mcp",
   "displayName": "Relay",
   "version": "0.1.0",
@@ -13,7 +12,7 @@
   "documentationUrl": "https://docs.relay.md",
   "privacyPolicyUrl": "https://relay.md/privacy",
   "termsOfServiceUrl": "https://relay.md/terms",
-  "repository": "https://github.com/relay-md/relay-claude-plugin",
+  "repository": "https://github.com/relay-md/relay-mcp",
   "license": "MIT",
   "keywords": [
     "relay",

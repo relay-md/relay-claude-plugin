@@ -1,6 +1,5 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "relay-mcp",
+  "name": "relay-md",
   "description": "The Relay plugin for Claude: connect Claude to your Relay shared folders.",
   "owner": {
     "name": "System 3",

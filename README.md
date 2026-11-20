@@ -9,19 +9,19 @@ This plugin adds one remote MCP server, `https://mcp.relay.md/mcp`. It contains 
 In Claude Code:
 
 ```text
-/plugin marketplace add relay-md/relay-claude-plugin
-/plugin install relay-mcp@relay-mcp
+/plugin marketplace add relay-md/relay-mcp
+/plugin install relay-mcp@relay-md
 /reload-plugins
 ```
 
 Or from your shell:
 
 ```sh
-claude plugin marketplace add relay-md/relay-claude-plugin
-claude plugin install relay-mcp@relay-mcp
+claude plugin marketplace add relay-md/relay-mcp
+claude plugin install relay-mcp@relay-md
 ```
 
-To try a release bundle without installing it, download the `.zip` from the [releases page](https://github.com/relay-md/relay-claude-plugin/releases) and run:
+To try a release bundle without installing it, download the `.zip` from the [releases page](https://github.com/relay-md/relay-mcp/releases) and run:
 
 ```sh
 claude --plugin-dir ./relay-mcp-<version>.zip

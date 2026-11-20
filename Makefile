@@ -3,7 +3,7 @@ VERSION := $(shell jq -r .version .claude-plugin/plugin.json)
 BUNDLE  := dist/$(NAME)-$(VERSION).zip
 
 # What ships in the bundle. Everything else in the repository is tooling.
-FILES := .claude-plugin/plugin.json .mcp.json README.md LICENSE
+FILES := .claude-plugin/plugin.json .claude-plugin/icon.png .mcp.json README.md LICENSE
 
 .PHONY: validate bundle clean
 validate:
