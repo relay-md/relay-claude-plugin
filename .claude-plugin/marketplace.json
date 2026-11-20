@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "relay-mcp",
+  "description": "The Relay plugin for Claude: connect Claude to your Relay shared folders.",
+  "owner": {
+    "name": "System 3",
+    "email": "support@relay.md"
+  },
+  "plugins": [
+    {
+      "name": "relay-mcp",
+      "source": "./",
+      "description": "Connect Claude to your Relay shared folders. Read, search, write and edit notes alongside your collaborators, in the relays and folders you choose."
+    }
+  ]
+}
