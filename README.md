@@ -1,6 +1,6 @@
 # Relay for Claude
 
-Connect Claude to your [Relay](https://relay.md) shared folders. Claude can read, search, write and edit notes in the relays and folders you choose, alongside the people editing them in Obsidian.
+Use the notes in your [Relay](https://relay.md) Shared Folders from Claude.
 
 This plugin adds one remote MCP server, `https://mcp.relay.md/mcp`. It contains no code that runs on your machine.
 
@@ -9,38 +9,33 @@ This plugin adds one remote MCP server, `https://mcp.relay.md/mcp`. It contains 
 In Claude Code:
 
 ```text
-/plugin marketplace add relay-md/relay-mcp
-/plugin install relay-mcp@relay-md
+/plugin marketplace add relay-md/relay-claude-plugin
+/plugin install Relay@relay-md
 /reload-plugins
 ```
 
-Or from your shell:
+In claude.ai or the Claude desktop app, download `Relay-<version>.zip` from the [releases page](https://github.com/relay-md/relay-claude-plugin/releases) and add it under **Customize > Plugins > Add > Upload plugin**.
+
+To try a bundle in Claude Code for one session:
 
 ```sh
-claude plugin marketplace add relay-md/relay-mcp
-claude plugin install relay-mcp@relay-md
-```
-
-To try a release bundle without installing it, download the `.zip` from the [releases page](https://github.com/relay-md/relay-mcp/releases) and run:
-
-```sh
-claude --plugin-dir ./relay-mcp-<version>.zip
+claude --plugin-dir ./Relay-<version>.zip
 ```
 
 ## Sign in
 
-Run `/mcp` in Claude Code, choose `relay`, and authenticate. Your browser opens the Relay sign-in page, where you choose which relays and folders Claude may use and whether it may edit them or only read them. You can revoke the connection at any time from the Relay console.
+Connect the `relay` server: run `/mcp` in Claude Code, or open the plugin's **Connectors** tab in claude.ai. Your browser opens the Relay sign-in page, where you choose which Relay Servers and Shared Folders Claude may use, and whether it may edit them or only read them. You can revoke the connection at any time from the Relay console.
 
 ## What Claude can do
 
-Within the folders you granted:
+Within the Shared Folders you chose:
 
 - read notes
-- search across a folder
+- search across a Shared Folder
 - write new notes
 - edit existing notes; an edit is merged with what your collaborators typed in the meantime
 
-Claude cannot delete notes, and it cannot reach relays or folders you did not grant.
+Claude cannot delete notes, and it cannot reach Relay Servers or Shared Folders you did not choose.
 
 ## Privacy
 
@@ -51,8 +46,8 @@ The plugin sends requests to `mcp.relay.md`, and sign-in is handled by `auth.sys
 Requires `make`, `jq`, `zip` and Claude Code.
 
 ```sh
-make validate   # claude plugin validate --strict
-make bundle     # writes dist/relay-mcp-<version>.zip
+make validate   # claude plugin validate
+make bundle     # writes dist/Relay-<version>.zip
 ```
 
 To release, set `version` in `.claude-plugin/plugin.json`, commit, and push a tag `v<version>`. The release workflow validates the plugin, builds the bundle and attaches it to a GitHub release.

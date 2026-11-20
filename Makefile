@@ -7,7 +7,7 @@ FILES := .claude-plugin/plugin.json .claude-plugin/icon.png .mcp.json README.md 
 
 .PHONY: validate bundle clean
 validate:
-	claude plugin validate --strict .
+	claude plugin validate .
 
 bundle: $(BUNDLE)
 

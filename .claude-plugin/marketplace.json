@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "relay-mcp",
+      "name": "Relay",
       "source": "./",
       "description": "Connect Claude to your Relay shared folders. Read, search, write and edit notes alongside your collaborators, in the relays and folders you choose."
     }

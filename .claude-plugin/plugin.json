@@ -1,5 +1,5 @@
 {
-  "name": "relay-mcp",
+  "name": "Relay",
   "displayName": "Relay",
   "version": "0.1.0",
   "description": "Connect Claude to your Relay shared folders. Read, search, write and edit notes alongside your collaborators, in the relays and folders you choose.",
@@ -12,7 +12,7 @@
   "documentationUrl": "https://docs.relay.md",
   "privacyPolicyUrl": "https://relay.md/privacy",
   "termsOfServiceUrl": "https://relay.md/terms",
-  "repository": "https://github.com/relay-md/relay-mcp",
+  "repository": "https://github.com/relay-md/relay-claude-plugin",
   "license": "MIT",
   "keywords": [
     "relay",
