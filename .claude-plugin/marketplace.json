@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "relay-md",
-      "source": "./",
+      "source": "./plugin",
       "description": "Real-time Obsidian collaboration for teams and agents."
     }
   ]
