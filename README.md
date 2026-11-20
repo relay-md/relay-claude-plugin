@@ -10,16 +10,16 @@ In Claude Code:
 
 ```text
 /plugin marketplace add relay-md/relay-claude-plugin
-/plugin install relay@relay-md
+/plugin install relay-md@relay-md
 /reload-plugins
 ```
 
-In claude.ai or the Claude desktop app, download `relay-<version>.zip` from the [releases page](https://github.com/relay-md/relay-claude-plugin/releases) and add it under **Customize > Plugins > Add > Upload plugin**.
+In claude.ai or the Claude desktop app, download `relay-md-<version>.zip` from the [releases page](https://github.com/relay-md/relay-claude-plugin/releases) and add it under **Customize > Plugins > Add > Upload plugin**.
 
 To try a bundle in Claude Code for one session:
 
 ```sh
-claude --plugin-dir ./relay-<version>.zip
+claude --plugin-dir ./relay-md-<version>.zip
 ```
 
 ## Sign in
@@ -47,7 +47,7 @@ Requires `make`, `jq`, `zip` and Claude Code.
 
 ```sh
 make validate   # claude plugin validate --strict
-make bundle     # writes dist/relay-<version>.zip
+make bundle     # writes dist/relay-md-<version>.zip
 ```
 
 To release, set `version` in `.claude-plugin/plugin.json`, commit, and push a tag `v<version>`. The release workflow validates the plugin, builds the bundle and attaches it to a GitHub release.
