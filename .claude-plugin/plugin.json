@@ -3,6 +3,7 @@
   "displayName": "Relay",
   "version": "0.1.0",
   "description": "Real-time Obsidian collaboration for teams and agents.",
+  "icon": "./icon.png",
   "author": {
     "name": "Relay",
     "email": "support@relay.md",
