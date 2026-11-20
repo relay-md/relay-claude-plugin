@@ -1,15 +1,15 @@
 {
   "name": "relay-md",
-  "description": "The Relay plugin for Claude: connect Claude to your Relay shared folders.",
+  "description": "Real-time Obsidian collaboration for teams and agents.",
   "owner": {
-    "name": "System 3",
+    "name": "relay",
     "email": "support@relay.md"
   },
   "plugins": [
     {
-      "name": "Relay",
+      "name": "relay",
       "source": "./",
-      "description": "Connect Claude to your Relay shared folders. Read, search, write and edit notes alongside your collaborators, in the relays and folders you choose."
+      "description": "Real-time Obsidian collaboration for teams and agents."
     }
   ]
 }

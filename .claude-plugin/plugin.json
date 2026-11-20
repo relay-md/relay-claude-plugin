@@ -1,10 +1,10 @@
 {
-  "name": "Relay",
+  "name": "relay",
   "displayName": "Relay",
   "version": "0.1.0",
-  "description": "Connect Claude to your Relay shared folders. Read, search, write and edit notes alongside your collaborators, in the relays and folders you choose.",
+  "description": "Real-time Obsidian collaboration for teams and agents.",
   "author": {
-    "name": "System 3",
+    "name": "relay",
     "email": "support@relay.md",
     "url": "https://relay.md"
   },
